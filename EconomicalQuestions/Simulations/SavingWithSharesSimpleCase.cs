@@ -20,7 +20,17 @@ namespace EconomicalQuestions.Simulations
 
                 var difference = possibleGaining - spares;
 
-                difference = difference * 2  / 3;
+
+                if (difference > 1602)
+                {
+                    var nonFree = difference - 1602;
+                    difference = nonFree * 2  / 3;
+
+                    difference += 1602;
+
+                }
+
+               
 
                 spares = spares + difference;
                 
