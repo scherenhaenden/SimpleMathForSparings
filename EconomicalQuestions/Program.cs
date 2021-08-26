@@ -9,7 +9,7 @@ namespace EconomicalQuestions
         {
             var savingWithSharesSimpleCase = new SavingWithSharesSimpleCase();
 
-            var results = savingWithSharesSimpleCase.Run(2000, (1.15), 30);
+            var results = savingWithSharesSimpleCase.Run(2000, (1.04), 30);
 
 
             foreach (var result in results)
